@@ -1,3 +1,5 @@
-document.querySelector(".test").addEventListener("click", function () {
-  alert("JS is working");
+$(document).ready(function () {
+  $("#sidebarCollapse").on("click", function () {
+    $("#sidebar").toggleClass("active");
+  });
 });
