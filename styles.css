@@ -59,7 +59,7 @@ a:focus {
 }
 
 #sidebar.active {
-  margin-left: -295px;
+  margin-left: -345px;
 }
 
 #sidebar .sidebar-header {
@@ -122,9 +122,26 @@ ul.CTAs a {
     CONTENT STYLE
 ----------------------------------------------------- */
 
+div[data-mobile] {
+  width: 100%;
+  background: #121933;
+  position: sticky;
+  display: none;
+  top: 0;
+  padding: 15px 0px 15px 10px;
+}
+
+button[data-mobile-button] {
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+div[data-body] {
+  padding: 0px 20px;
+}
 #content {
   width: 100%;
-  padding: 20px;
   min-height: 100vh;
   transition: all 0.3s;
 }
@@ -143,7 +160,7 @@ input {
   color: white;
   border: none;
   border-top-left-radius: 9px;
-  bottom-left-radius: 9px;
+  border-bottom-left-radius: 9px;
   padding-left: 10px;
 }
 
@@ -155,14 +172,18 @@ input {
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 873px) {
+@media (max-width: 345px) {
   #sidebar {
-    margin-left: -295px;
+    margin-left: -345px;
   }
   #sidebar.active {
     margin-left: 0;
   }
   #sidebarCollapse span {
     display: none;
+  }
+  div[data-mobile] {
+    display: block;
+    color: white;
   }
 }

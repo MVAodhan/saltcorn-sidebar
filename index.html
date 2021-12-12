@@ -27,7 +27,7 @@
         <div class="sidebar-header">
           <div class="d-flex">
             <svg
-              class="mr-2"
+              class="mr-2 sidebar-svg"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -114,6 +114,40 @@
 
       <!-- Page Content  -->
       <div id="content">
+        <div data-mobile>
+          <div class="d-flex justify-content-between pr-3">
+            <div class="d-flex flex-row ">
+              <svg
+                  class="mr-2"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.81163 9.00884C3.9854 7.40532 1.67416 6.08918 1.67554 6.08408C1.67691 6.07897 4.04814 4.7238 6.94493 3.07259C12.0772 0.147157 12.2128 0.0709488 12.2487 0.0919867C12.3156 0.131221 22.2697 5.80461 22.3402 5.84371C22.3781 5.86478 22.4093 5.88611 22.4094 5.89111C22.4097 5.90234 19.1919 7.74065 19.172 7.74065C19.1641 7.74065 17.5163 6.78848 15.5102 5.62471C13.5041 4.46094 12.3439 3.81788 12.3307 3.81436C12.3169 3.81067 11.4729 4.29704 10.3367 4.96348C8.78359 5.87448 8.37069 6.12266 8.38548 6.13628C8.39579 6.14578 9.55057 6.79135 11.553 7.9522C13.5554 9.11305 15.1937 10.067 15.1937 10.0721C15.1937 10.0832 11.9829 11.9244 11.9637 11.9244C11.9563 11.9244 9.63786 10.6123 6.81163 9.00884Z"
+                    fill="#DEE5FF"
+                  />
+                  <path
+                    d="M6.82237 21.027L1.67649 18.0934L1.67278 16.4865C1.67074 15.6028 1.67281 14.3839 1.67739 14.3839C1.68337 14.3839 8.30626 18.1977 8.30626 18.1977L8.36821 18.2335L8.36754 16.2388L8.36686 13.7483L5.24367 11.9542L1.67649 9.89606L1.67279 7.98544C1.67076 6.93459 1.67404 6.07498 1.68008 6.0752C1.68612 6.07542 4.00672 7.38965 6.83695 8.99573L11.9828 11.9159L11.9865 17.9387C11.9885 21.2512 11.9852 23.9613 11.9792 23.9611C11.9732 23.9608 9.65261 22.6406 6.82237 21.027H6.82237Z"
+                    fill="#DEE5FF"
+                  />
+                  <path
+                    d="M15.5608 13.9821V18.1865L22.0336 14.428L22.1331 14.3704L22.2325 14.3134L22.3319 14.2558L22.4311 14.1983V17.9635L22.0336 18.2074L11.983 23.9558V11.9161L22.0336 6.09216L22.4002 5.87988L22.4311 9.99387L22.3319 10.0514L22.2325 10.1087L22.0336 10.2236L15.5608 13.9821Z"
+                    fill="#DEE5FF"
+                  />
+                </svg>
+                <h5>Saltcorn Wiki</h5>
+              </div>
+              <button data-mobile-button class='burger'>
+                <i class="fas fa-align-justify "></i>
+              </button>
+            </div>
+        </div>
+
+
+        <div data-body class='pt-3'>
         <h2>Collapsible Sidebar Using Bootstrap 4</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -172,8 +206,9 @@
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-      </div>
-    </div>
+        </div>
+      
+    </div?>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
