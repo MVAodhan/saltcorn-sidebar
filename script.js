@@ -1,8 +1,21 @@
 $(document).ready(function () {
   $(".burger").on("click", function () {
-    $("#sidebar").toggleClass("active");
+    $("#sidebar").toggleClass("open");
+    $("#mNav").toggleClass("mOpen");
   });
-  $(".sidebar-svg").on("click", function () {
-    $("#sidebar").toggleClass("active");
+  $(".burger-sidebar").on("click", function () {
+    $("#sidebar").toggleClass("open");
+    $("#mNav").toggleClass("mOpen");
+  });
+
+  $(window).resize(function () {
+    if ($("#sidebar").hasClass("open") && $("#mNav").hasClass("mOpen")) {
+      $("#mNav").toggleClass("mOpen");
+    }
+
+    if ($(window).width() <= 551 && $("#sidebar").hasClass("open")) {
+      $("#sidebar").toggleClass("open");
+      $("#mNav").toggleClass("mOpen");
+    }
   });
 });

@@ -58,9 +58,29 @@ a:focus {
   transition: all 0.3s;
 }
 
-#sidebar.active {
+/*My sidebar CSS Logic */
+#sidebar.open {
+  margin-left: 0px;
+}
+
+#sidebar {
   margin-left: -345px;
 }
+
+.mobileClose {
+  width: 100%;
+  background: #121933;
+  padding: 15px 0px 15px 10px;
+  color: white;
+  display: none;
+}
+.mOpen {
+  display: block;
+  position: sticky;
+  top: 0;
+}
+
+/*My sidebar CSS Logic */
 
 #sidebar .sidebar-header {
   padding: 20px;
@@ -122,15 +142,6 @@ ul.CTAs a {
     CONTENT STYLE
 ----------------------------------------------------- */
 
-div[data-mobile] {
-  width: 100%;
-  background: #121933;
-  position: sticky;
-  display: none;
-  top: 0;
-  padding: 15px 0px 15px 10px;
-}
-
 button[data-mobile-button] {
   background: transparent;
   color: white;
@@ -172,7 +183,7 @@ input {
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 345px) {
+@media (max-width: 551px) {
   #sidebar {
     margin-left: -345px;
   }
@@ -183,7 +194,10 @@ input {
     display: none;
   }
   div[data-mobile] {
-    display: block;
-    color: white;
+    margin-top: 0px;
+  }
+
+  #sidebar {
+    margin-left: -345px;
   }
 }
