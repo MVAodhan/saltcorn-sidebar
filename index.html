@@ -22,14 +22,14 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    <div class="wrapper d-flex">
       <!-- Sidebar  -->
-      <nav id="sidebar" class='open'>
+      <nav id="sidebar" class='open text-white d-flex flex-column align-center'>
         <div class="sidebar-header">
           <div class="d-flex justify-content-between">
-            <div class="d-flex flex-row"> 
+            <div class="d-flex flex-row p-3"> 
             <svg
-              class="mr-2 sidebar-svg"
+              class="sidebar-svg pr-1"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -56,8 +56,8 @@
             </button>
           </div>
           <div>
-            <div data-input>
-              <input type="text" value="Search Wiki" />
+            <div data-input class='d-flex justify-content-between rounded'>
+              <input type="text" value="Search Wiki" class='text-white'/>
               <button type="button" data-button>
                 <i class="fas fa-search" data-icon></i>
               </button>

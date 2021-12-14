@@ -17,5 +17,10 @@ $(document).ready(function () {
       $("#sidebar").toggleClass("open");
       $("#mNav").toggleClass("mOpen");
     }
+
+    if ($(window).width() > 551 && $("#mNav").hasClass("mOpen")) {
+      $("#mNav").toggleClass("nOpen");
+      $("#sidebar").toggleClass("open");
+    }
   });
 });

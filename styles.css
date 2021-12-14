@@ -45,7 +45,7 @@ a:focus {
 ----------------------------------------------------- */
 
 .wrapper {
-  display: flex;
+  /* display: flex; */
   width: 100%;
   align-items: stretch;
 }
@@ -54,7 +54,6 @@ a:focus {
   min-width: 345px;
   max-width: 345px;
   background: #121933;
-  color: #fff;
   transition: all 0.3s;
 }
 
@@ -80,12 +79,7 @@ a:focus {
   top: 0;
 }
 
-/*My sidebar CSS Logic */
-
-#sidebar .sidebar-header {
-  padding: 20px;
-  background: #121933;
-}
+/*My sidebar CSS Logic end */
 
 #sidebar ul.components {
   padding: 20px 0;
@@ -158,17 +152,13 @@ div[data-body] {
 }
 
 div[data-input] {
-  display: flex;
-  justify-content: space-between;
+  padding-right: 10px;
   background-color: rgba(110, 119, 149, 0.28);
   height: 48px;
-  border-radius: 9px;
-  padding-right: 10px;
 }
 
 input {
   background-color: rgb(44, 51, 78);
-  color: white;
   border: none;
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
