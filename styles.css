@@ -45,14 +45,13 @@ a:focus {
 ----------------------------------------------------- */
 
 .wrapper {
-  /* display: flex; */
   width: 100%;
-  align-items: stretch;
 }
 
 #sidebar {
   min-width: 345px;
   max-width: 345px;
+  margin-left: -345px;
   background: #121933;
   transition: all 0.3s;
 }
@@ -60,10 +59,6 @@ a:focus {
 /*My sidebar CSS Logic */
 #sidebar.open {
   margin-left: 0px;
-}
-
-#sidebar {
-  margin-left: -345px;
 }
 
 .mobileClose {
@@ -120,18 +115,6 @@ ul ul a {
   background: #121933;
 }
 
-ul.CTAs {
-  padding: 20px;
-}
-
-ul.CTAs a {
-  text-align: center;
-  font-size: 0.9em !important;
-  display: block;
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
-
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -152,6 +135,7 @@ div[data-body] {
 }
 
 div[data-input] {
+  margin: 0px 10px;
   padding-right: 10px;
   background-color: rgba(110, 119, 149, 0.28);
   height: 48px;
