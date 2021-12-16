@@ -3,21 +3,6 @@ body {
   background: white;
 }
 
-p {
-  font-size: 1.1em;
-  font-weight: 300;
-  line-height: 1.7em;
-  color: #999;
-}
-
-a,
-a:hover,
-a:focus {
-  color: inherit;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
 .navbar {
   padding: 15px 10px;
   background: #fff;
@@ -26,23 +11,6 @@ a:focus {
   margin-bottom: 40px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
-
-.navbar-btn {
-  box-shadow: none;
-  outline: none !important;
-  border: none;
-}
-
-.line {
-  width: 100%;
-  height: 1px;
-  border-bottom: 1px dashed #ddd;
-  margin: 40px 0;
-}
-
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
 
 .wrapper {
   width: 100%;
@@ -56,7 +24,6 @@ a:focus {
   transition: all 0.3s;
 }
 
-/*My sidebar CSS Logic */
 #sidebar.open {
   margin-left: 0px;
 }
@@ -66,15 +33,9 @@ a:focus {
   background: #121933;
   padding: 15px 0px 15px 10px;
   color: white;
-  display: none;
-}
-.mOpen {
-  display: block;
   position: sticky;
   top: 0;
 }
-
-/*My sidebar CSS Logic end */
 
 #sidebar ul.components {
   padding: 20px 0;
@@ -85,6 +46,7 @@ a:focus {
   padding: 10px;
   font-size: 1.1em;
   display: block;
+  color: white;
 }
 
 #sidebar ul li a:hover {
@@ -94,24 +56,6 @@ a:focus {
 #sidebar ul li.active > a,
 a[aria-expanded="true"] {
   color: #fff;
-  background: #121933;
-}
-
-a[data-toggle="collapse"] {
-  position: relative;
-}
-
-.dropdown-toggle::after {
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-}
-
-ul ul a {
-  font-size: 0.9em !important;
-  padding-left: 30px !important;
   background: #121933;
 }
 
@@ -147,31 +91,15 @@ input {
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
   padding-left: 10px;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
 }
 
 [data-button] {
   background-color: rgb(44, 51, 78);
   border: none;
   color: white;
-} /* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-
-@media (max-width: 551px) {
-  #sidebar {
-    margin-left: -345px;
-  }
-  #sidebar.active {
-    margin-left: 0;
-  }
-  #sidebarCollapse span {
-    display: none;
-  }
-  div[data-mobile] {
-    margin-top: 0px;
-  }
-
-  #sidebar {
-    margin-left: -345px;
-  }
 }
